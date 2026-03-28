@@ -1,40 +1,51 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: GOOSE Works
+description: Digital Substation Consulting — Expert services for Protection & Control and Digital Substation implementations.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Expert consulting for Digital Substations, Protection & Control systems, and IEC 61850 implementations
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/goose-works-logo.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Our Services
+      link: /digital-substation/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+      variant: primary
+    - text: Contact Us
+      link: mailto:info@gooseworks.com
+      icon: email
+      variant: secondary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## What We Do
+
+GOOSE Works specializes in digital substation consulting, providing expert guidance on IEC 61850 implementations, protection engineering, and control system design for modern power systems.
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Digital Substations" icon="seti:powershell">
+		Full-service IEC 61850 consulting including SCL engineering, GOOSE configuration, and system integration for modern digital substations.
+		[Learn More →](/digital-substation/)
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+	<Card title="Protection & Control" icon="seti:settings">
+		Expert protection engineering for transmission and distribution systems, including relay settings, scheme design, and commissioning support.
+		[Learn More →](/protection/)
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Control Systems" icon="seti:config">
+		SCADA integration, RTU/PLC programming, and substation automation design for reliable control system implementations.
+		[Explore Controls →](/controls/)
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Tools & Downloads" icon="seti:default">
+		Free engineering tools including Excel utilities and OpenSCD Desktop for IEC 61850 file management and configuration.
+		[Get Tools →](/tools/)
 	</Card>
 </CardGrid>
+
+## Why GOOSE Works?
+
+With deep expertise in both traditional protection & control and cutting-edge digital substation technologies, we bridge the gap between legacy systems and modern IEC 61850 implementations. Our consulting services help utilities, integrators, and EPC firms deliver reliable, standards-compliant substation projects.
+
+---
+
+*Built with [Astro](https://astro.build/) and [Starlight](https://starlight.astro.build/).*

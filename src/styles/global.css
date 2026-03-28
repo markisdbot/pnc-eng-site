@@ -1,1 +1,149 @@
 @import "tailwindcss";
+
+/* GOOSE Works Custom Styles */
+
+/* Professional color palette - Navy Blue & Electric Orange */
+:root {
+  --gw-navy: #1a2744;
+  --gw-navy-light: #2a3b5c;
+  --gw-orange: #e85d04;
+  --gw-orange-light: #f48c06;
+  --gw-slate: #475569;
+  --gw-slate-light: #64748b;
+  --gw-cream: #faf9f6;
+}
+
+/* Custom hero styling for GOOSE Works branding */
+[data-page-title="GOOSE Works"] .hero {
+  background: linear-gradient(135deg, var(--gw-cream) 0%, #f0f4f8 100%);
+}
+
+[data-page-title="GOOSE Works"] .hero img {
+  max-width: 400px !important;
+  filter: drop-shadow(0 4px 20px rgba(26, 39, 68, 0.15));
+}
+
+/* Professional button styling */
+.sl-button.primary {
+  background: linear-gradient(135deg, var(--gw-navy) 0%, var(--gw-navy-light) 100%) !important;
+  border: none !important;
+  box-shadow: 0 4px 14px rgba(26, 39, 68, 0.3) !important;
+  transition: all 0.2s ease !important;
+}
+
+.sl-button.primary:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(26, 39, 68, 0.4) !important;
+}
+
+.sl-button.secondary {
+  border-color: var(--gw-navy) !important;
+  color: var(--gw-navy) !important;
+  transition: all 0.2s ease !important;
+}
+
+.sl-button.secondary:hover {
+  background: var(--gw-navy) !important;
+  color: white !important;
+}
+
+/* Card hover effects */
+.card {
+  transition: all 0.2s ease;
+  border: 1px solid rgba(26, 39, 68, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(26, 39, 68, 0.12);
+  border-color: rgba(26, 39, 68, 0.2);
+}
+
+/* Sidebar styling */
+.sidebar-content {
+  background: linear-gradient(180deg, #ffffff 0%, var(--gw-cream) 100%);
+}
+
+/* Site title styling */
+.site-title {
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+  color: var(--gw-navy) !important;
+}
+
+/* Link styling */
+a {
+  color: var(--gw-navy);
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--gw-orange);
+}
+
+/* Main content area */
+.main-frame {
+  background: linear-gradient(180deg, #ffffff 0%, var(--gw-cream) 100%);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--gw-navy);
+}
+
+/* Accent color for highlights */
+::selection {
+  background: rgba(232, 93, 4, 0.2);
+  color: var(--gw-navy);
+}
+
+/* Professional table styling */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(26, 39, 68, 0.08);
+}
+
+th {
+  background: var(--gw-navy) !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+td {
+  border-bottom: 1px solid rgba(26, 39, 68, 0.1);
+}
+
+/* Code blocks */
+code {
+  background: rgba(26, 39, 68, 0.06);
+  color: var(--gw-navy);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  background: var(--gw-navy) !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(26, 39, 68, 0.15);
+}
+
+/* Footer styling */
+footer {
+  border-top: 1px solid rgba(26, 39, 68, 0.1);
+  background: var(--gw-cream);
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+  [data-page-title="GOOSE Works"] .hero img {
+    max-width: 280px !important;
+  }
+  
+  .hero {
+    padding: 2rem 1rem !important;
+  }
+}

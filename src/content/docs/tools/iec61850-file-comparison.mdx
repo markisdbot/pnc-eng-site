@@ -1,0 +1,73 @@
+---
+title: IEC 61850 File Comparison Tool
+description: Compare two IEC 61850 SCL files (CID, SCD, ICD, SSD) and view differences in a color-coded report.
+---
+
+import IEC61850FileComparison from '../../../components/tools/IEC61850FileComparison.tsx';
+
+# IEC 61850 File Comparison Tool
+
+A professional tool for comparing IEC 61850 SCL (Substation Configuration Language) files. Quickly identify configuration changes between file versions or compare IED configurations from different sources.
+
+## How to Use
+
+1. **Select the base file (File 1)** — Your reference or original version
+2. **Select the modified file (File 2)** — The updated or revised version
+3. Click **"Compare Files"** to generate the detailed comparison report
+
+## Supported File Formats
+
+| Format | Description |
+|--------|-------------|
+| **CID** | Configured IED Description |
+| **SCD** | Substation Configuration Description |
+| **ICD** | IED Capability Description |
+| **SSD** | System Specification Description |
+| **XML** | Generic SCL XML files |
+
+## What Gets Compared
+
+The tool performs deep analysis of SCL file structure, comparing:
+
+### Header Information
+- File identification, version, and revision
+- Tool ID and naming structure
+
+### IED Configurations
+- Added or removed IEDs
+- Device attributes (manufacturer, type, description)
+- Logical Devices (LD) and Logical Nodes (LN)
+- DataSets and their FCDA members
+- Control Blocks (Report, GOOSE, Sampled Values, Log)
+
+### Communication Network
+- SubNetwork configurations
+- Connected Access Points
+- IP addresses, VLAN settings, MAC addresses
+- GOOSE and SMV addressing
+
+### Data Type Templates
+- LNodeType, DOType, DAType, EnumType definitions
+- Structural changes to data models
+
+## Understanding Results
+
+| Status | Meaning |
+|--------|---------|
+| 🟢 **ADDED** | Element exists in File 2 but not File 1 |
+| 🔴 **REMOVED** | Element exists in File 1 but not File 2 |
+| 🟡 **MODIFIED** | Element exists in both with different values |
+
+---
+
+<IEC61850FileComparison client:load />
+
+---
+
+## About This Tool
+
+This web-based tool is developed and maintained by GOOSE Works as part of our commitment to the power engineering community. It is based on proven methodologies used in professional IEC 61850 engineering workflows.
+
+For questions or feature requests, please [contact us](mailto:info@gooseworks.com).
+
+[← Back to All Tools](/tools/)
