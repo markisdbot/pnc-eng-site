@@ -7,17 +7,20 @@ hero:
   image:
     file: ../../assets/goose-works-logo.png
   actions:
-    - text: Our Services
+    - text: Explore Our Services
       link: /digital-substation/
       icon: right-arrow
       variant: primary
-    - text: Contact Us
+    - text: Get in Touch
       link: mailto:info@gooseworks.com
       icon: email
       variant: secondary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+
+{/* Services Section */}
+<section class="services-section">
 
 ## What We Do
 
@@ -36,16 +39,56 @@ GOOSE Works specializes in digital substation consulting, providing expert guida
 		SCADA integration, RTU/PLC programming, and substation automation design for reliable control system implementations.
 		[Explore Controls →](/controls/)
 	</Card>
-	<Card title="Tools & Downloads" icon="seti:default">
+	<Card title="Engineering Tools" icon="seti:default">
 		Free engineering tools including Excel utilities and OpenSCD Desktop for IEC 61850 file management and configuration.
 		[Get Tools →](/tools/)
 	</Card>
 </CardGrid>
 
-## Why GOOSE Works?
-
-With deep expertise in both traditional protection & control and cutting-edge digital substation technologies, we bridge the gap between legacy systems and modern IEC 61850 implementations. Our consulting services help utilities, integrators, and EPC firms deliver reliable, standards-compliant substation projects.
+</section>
 
 ---
 
-*Built with [Astro](https://astro.build/) and [Starlight](https://starlight.astro.build/).*
+{/* Why Choose Us Section */}
+<section class="why-section">
+
+## Why GOOSE Works?
+
+With deep expertise in both traditional protection & control and cutting-edge digital substation technologies, we bridge the gap between legacy systems and modern IEC 61850 implementations.
+
+### Our Approach
+
+**Technical Depth** — Our engineers have hands-on experience with major IEC 61850 implementations across transmission and distribution substations. We work with leading relay manufacturers and understand the real-world challenges of deploying digital substation technology.
+
+**Practical Experience** — From distribution substations to extra-high-voltage transmission systems, we've worked on protection and control projects of all sizes. We understand the critical nature of protection systems and the importance of getting it right the first time.
+
+**Standards Compliance** — We design to industry standards including IEEE C37 series, IEC 61850, NERC PRC standards, and utility-specific engineering requirements.
+
+**End-to-End Support** — From initial system design through commissioning, we help you navigate the complexities of modern substation automation.
+
+[Discuss Your Project →](mailto:info@gooseworks.com)
+
+</section>
+
+---
+
+{/* CTA Section */}
+<section class="cta-section">
+
+## Ready to modernize your substation?
+
+Let's discuss how GOOSE Works can help ensure your project's success.
+
+<div class="cta-buttons">
+[Contact Us](mailto:info@gooseworks.com)
+[View Services](/digital-substation/)
+</div>
+
+</section>
+
+---
+
+{/* Footer Note */}
+<p class="footer-note">
+Built with modern web technologies. GOOSE Works — Digital Substation Consulting.
+</p>
