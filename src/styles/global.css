@@ -857,11 +857,12 @@ footer a:hover {
 /* Footer note */
 .footer-note {
   text-align: center;
-  color: var(--gw-slate-400);
+  color: var(--gw-slate-500);
   font-size: 0.875rem;
   margin-top: var(--space-2xl);
   padding-top: var(--space-xl);
   border-top: 1px solid var(--gw-slate-200);
+  background: var(--gw-paper);
 }
 
 /* ============================================
