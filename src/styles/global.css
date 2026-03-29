@@ -224,6 +224,19 @@ nav a:hover::after {
   line-height: 1.6;
 }
 
+/* Hero actions - ensure secondary button has proper contrast */
+.hero .actions .sl-link-button.secondary {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-color: var(--gw-slate-300) !important;
+  color: var(--gw-navy) !important;
+}
+
+.hero .actions .sl-link-button.secondary:hover {
+  background: var(--gw-navy) !important;
+  border-color: var(--gw-navy) !important;
+  color: white !important;
+}
+
 /* Hero title */
 .hero h1 {
   font-size: 4rem !important;
@@ -291,6 +304,7 @@ button.primary:active {
 
 /* Secondary buttons */
 .sl-button.secondary,
+.sl-link-button.secondary,
 button.secondary,
 a[variant="secondary"] {
   background: transparent !important;
@@ -304,6 +318,7 @@ a[variant="secondary"] {
 }
 
 .sl-button.secondary:hover,
+.sl-link-button.secondary:hover,
 button.secondary:hover {
   background: var(--gw-navy) !important;
   border-color: var(--gw-navy) !important;
